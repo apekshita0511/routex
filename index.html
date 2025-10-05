@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RouteX Web • Kanpur Metro</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="theme-color" content="#111">
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">RouteX</div>
+    <div class="tag">Kanpur Metro (Demo)</div>
+  </nav>
+
+  <main class="layout">
+    <section class="panel">
+      <h2>Best Route</h2>
+
+      <label>Source</label>
+      <input id="src" list="stations" placeholder="Type station…" />
+
+      <label>Destination</label>
+      <input id="dst" list="stations" placeholder="Type station…" />
+      <datalist id="stations"></datalist>
+
+      <div class="opt">
+        <label><input type="radio" name="mode" value="time" checked> Min Time</label>
+        <label><input type="radio" name="mode" value="transfers"> Min Transfers</label>
+      </div>
+
+      <div class="btns">
+        <button id="btn">Find Route</button>
+        <button id="swap" class="ghost" onclick="swapStations()">Swap</button>
+        <button id="share" class="ghost">Share Link</button>
+      </div>
+
+      <div id="summary" class="summary hidden"></div>
+      <div id="steps" class="steps hidden"></div>
+    </section>
+
+    <section class="map-wrap">
+      <div id="map"></div>
+    </section>
+  </main>
+
+  <footer class="ft">© RouteX • Demo dataset • Built with Leaflet + Vanilla JS</footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

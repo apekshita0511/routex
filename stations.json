@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "city": "Kanpur",
+    "note": "Demo/student dataset. Approximate station order, names & coordinates for portfolio use."
+  },
+  "stations": [
+    { "id": "IITK", "name": "IIT Kanpur",               "line": "Orange", "lat": 26.5123, "lng": 80.2329 },
+    { "id": "KALY", "name": "Kalyanpur",                "line": "Orange", "lat": 26.5000, "lng": 80.2810 },
+    { "id": "GURU", "name": "Gurudev Chauraha",         "line": "Orange", "lat": 26.5085, "lng": 80.2760 },
+    { "id": "CSJM", "name": "CSJM University",          "line": "Orange", "lat": 26.5040, "lng": 80.2680 },
+    { "id": "RAWT", "name": "Rawatpur",                 "line": "Orange", "lat": 26.5015, "lng": 80.3000 },
+    { "id": "LLRH", "name": "LLR Hospital (Hallet)",    "line": "Orange", "lat": 26.4920, "lng": 80.3135 },
+    { "id": "GEET", "name": "Geeta Nagar",              "line": "Orange", "lat": 26.4980, "lng": 80.3090 },
+    { "id": "SWRP", "name": "Swaroop Nagar",            "line": "Orange", "lat": 26.4780, "lng": 80.3290 },
+    { "id": "CHUN", "name": "Chunniganj",               "line": "Orange", "lat": 26.4795, "lng": 80.3270 },
+    { "id": "MOTI", "name": "Moti Jheel",               "line": "Orange", "lat": 26.4726, "lng": 80.3327 },
+    { "id": "NAVE", "name": "Naveen Market",            "line": "Orange", "lat": 26.4710, "lng": 80.3450 },
+    { "id": "CANT", "name": "Kanpur Cantonment",        "line": "Orange", "lat": 26.4635, "lng": 80.3565 },
+    { "id": "CENT", "name": "Kanpur Central",           "line": "Orange", "lat": 26.4614, "lng": 80.3519 },
+    { "id": "TRNG", "name": "Transport Nagar",          "line": "Orange", "lat": 26.4200, "lng": 80.3300 },
+    { "id": "NAUB", "name": "Naubasta",                 "line": "Orange", "lat": 26.4100, "lng": 80.3190 }
+  ],
+  "edges": [
+    { "from": "IITK", "to": "KALY", "time": 6, "line": "Orange" },
+    { "from": "KALY", "to": "GURU", "time": 3, "line": "Orange" },
+    { "from": "GURU", "to": "CSJM", "time": 3, "line": "Orange" },
+
+    { "from": "KALY", "to": "RAWT", "time": 6, "line": "Orange" },
+    { "from": "RAWT", "to": "LLRH", "time": 5, "line": "Orange" },
+    { "from": "LLRH", "to": "GEET", "time": 3, "line": "Orange" },
+    { "from": "GEET", "to": "SWRP", "time": 5, "line": "Orange" },
+    { "from": "SWRP", "to": "CHUN", "time": 3, "line": "Orange" },
+    { "from": "CHUN", "to": "MOTI", "time": 3, "line": "Orange" },
+    { "from": "MOTI", "to": "NAVE", "time": 4, "line": "Orange" },
+    { "from": "NAVE", "to": "CANT", "time": 3, "line": "Orange" },
+    { "from": "CANT", "to": "CENT", "time": 2, "line": "Orange" },
+    { "from": "CENT", "to": "TRNG", "time": 10, "line": "Orange" },
+    { "from": "TRNG", "to": "NAUB", "time": 7, "line": "Orange" }
+  ],
+  "fares": [
+    { "upToMinutes": 5,  "price": 10 },
+    { "upToMinutes": 12, "price": 20 },
+    { "upToMinutes": 25, "price": 30 },
+    { "upToMinutes": 45, "price": 40 },
+    { "upToMinutes": 70, "price": 50 }
+  ],
+  "transferPenaltyMinutes": 5
+}
