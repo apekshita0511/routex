@@ -28,3 +28,11 @@ Built using **HTML, CSS, JavaScript**, and **Leaflet.js** with OpenStreetMap.
 ---
 
 ## 📂 Folder Structure
+<pre> ``` </pre>
+.
+├── index.html # Main UI
+├── styles.css # Styling
+├── app.js # Core logic (routing + map handling)
+├── stations.json # Metro stations & connections data
+└── README.md # Project documentation
+<pre> ``` </pre>
